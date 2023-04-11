@@ -16,8 +16,8 @@ async function authDocProduction(req, res, next){
     res.status(401).set('Content-Type', 'text/html');
     res.send(Buffer.from(`
     <form method='post'>
-      <p style="color: red"> Wrong Password!</p>
-      <label for="passwordTyped"> Insert a Documentation Password:</label>
+      <p style="color: red">Wrong Password!</p>
+      <label for="passwordTyped">Please, insert the Documentation Password:</label>
       <input type="password" name="passwordTyped" id="passwordTyped"/>
       <button type="submit">Login</button>
     </form>
